@@ -72,11 +72,11 @@ from nlpia.web import get_url_filemeta
 from nlpia.web import dropbox_basename, get_url_title, try_parse_url  # noqa (not used)
 from nlpia.web import requests_get
 
-import ipdb
+#import ipdb
 
 _parse = None  # placeholder for SpaCy parser + language model
 
-np = pd.np
+#np = pd.np
 
 log = logging.getLogger(__name__)
 log.setLevel(logging.DEBUG)
@@ -1036,7 +1036,7 @@ def read_named_csv(name, data_path=DATA_PATH, nrows=None, verbose=True):
     filepath = os.path.join(BIGDATA_PATH, name + '.bin.gz')
     if os.path.isfile(filepath):
         try:
-            ipdb.set_trace()
+            #ipdb.set_trace()
             return KeyedVectors.load_word2vec_format(filepath, binary=True)
         except ValueError:
             pass

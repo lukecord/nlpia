@@ -26,10 +26,10 @@ from nlpia.constants import BASE_DIR, DATA_PATH, BIGDATA_PATH, BOOK_PATH  # noqa
 from nlpia.constants import HTML_TAGS, EOL
 from nlpia.constants import tqdm, no_tqdm
 
-try:
-    np = pd.np
-except ImportError:
-    import numpy as np  # noqa
+#try:
+    #np = pd.np
+#except ImportError:
+import numpy as np  # noqa
 log = logging.getLogger(__name__)
 log.setLevel(logging.DEBUG)
 
